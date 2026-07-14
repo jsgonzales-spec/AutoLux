@@ -51,6 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
     });
 
+    form.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
     function showStatus(message, type) {
         status.textContent = message;
         status.className = type;
