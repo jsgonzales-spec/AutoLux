@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Rentals | AutoLux</title>
+    <!-- Links to your existing global styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <!-- FontAwesome for premium luxury icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: #090909; color: #ffffff; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0;">
+
+    <!-- NAVBAR PLACEHOLDER (Do not touch actual navbar) -->
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="rental-hero" style="position: relative; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(180deg, rgba(9,9,9,0.4) 0%, #090909 100%), url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1920') center/cover no-repeat; padding: 0 2rem;">
+            <div style="max-width: 800px; animation: fadeIn 1s ease-out;">
+                <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; letter-spacing: -1px; margin-bottom: 1.5rem; text-transform: uppercase;">
+                    Experience <span style="color: #D72638;">Pure Performance</span>
+                </h1>
+                <p style="font-size: clamp(1rem, 2vw, 1.25rem); color: #a0a0a0; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                    Select from our curated fleet of tier-one supercars and luxury cruisers. Daily rentals tailored for high-caliber drivers.
+                </p>
+            </div>
+        </section>
+
+        <!-- Rental Fleet & Filters -->
+        <section style="padding: 6rem 2rem; max-width: 1400px; margin: 0 auto;">
+            
+            <!-- Category Filter Buttons -->
+            <div class="filter-wrapper" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 4rem;">
+                <button class="filter-btn active" data-category="all" style="background: #D72638; color: #fff; border: 1px solid #D72638; padding: 0.75rem 2rem; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">All Fleet</button>
+                <button class="filter-btn" data-category="Sports" style="background: rgba(255,255,255,0.03); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 2rem; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">Sports</button>
+                <button class="filter-btn" data-category="Luxury" style="background: rgba(255,255,255,0.03); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 2rem; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">Luxury</button>
+                <button class="filter-btn" data-category="SUV" style="background: rgba(255,255,255,0.03); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 2rem; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">SUV</button>
+                <button class="filter-btn" data-category="Sedan" style="background: rgba(255,255,255,0.03); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 2rem; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">Sedan</button>
+            </div>
+
+            <!-- Rental Grid -->
+            <div id="rental-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem;">
+                <!-- Dynamically populated via rentals.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PLACEHOLDER (Do not touch actual footer) -->
+
+    <!-- Add dynamic inline styles/hovers natively to keep standard style.css clean -->
+    <style>
+        .filter-btn:hover {
+            border-color: #D72638 !important;
+            background: rgba(215, 38, 56, 0.1) !important;
+        }
+        .filter-btn.active:hover {
+            background: #D72638 !important;
+            color: #fff !important;
+        }
+        .rental-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        .rental-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(215, 38, 56, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        .rent-now-btn:hover {
+            background-color: #be1e2f !important;
+            transform: scale(1.02);
+        }
+    </style>
+
+    <script src="rentals.js"></script>
+</body>
+</html>

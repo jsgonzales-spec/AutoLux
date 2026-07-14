@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Marketplace | AutoLux</title>
+    <!-- Links to your existing global styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: #090909; color: #ffffff; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0;">
+
+    <!-- NAVBAR PLACEHOLDER (Do not touch actual navbar) -->
+
+    <main>
+        <!-- Marketplace Hero Section -->
+        <section class="cars-hero" style="position: relative; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(180deg, rgba(9,9,9,0.3) 0%, #090909 100%), url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1920') center/cover no-repeat; padding: 0 2rem;">
+            <div style="max-width: 700px; animation: fadeIn 1s ease-out;">
+                <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; letter-spacing: -1px; margin-bottom: 1.5rem; text-transform: uppercase;">
+                    The <span style="color: #D72638;">Showroom</span>
+                </h1>
+                
+                <!-- Premium Search Box -->
+                <div style="position: relative; max-width: 550px; margin: 2rem auto 0 auto;">
+                    <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 1.25rem; top: 50%; transform: translateY(-50%); color: #666;"></i>
+                    <input type="text" id="car-search" placeholder="Search by brand, model, or year..." style="width: 100%; padding: 1.1rem 1.1rem 1.1rem 3.2rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px; color: #fff; font-size: 1rem; backdrop-filter: blur(10px); outline: none; transition: border-color 0.3s ease, box-shadow 0.3s ease; box-sizing: border-box;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketplace Collection -->
+        <section style="padding: 4rem 2rem 8rem 2rem; max-width: 1400px; margin: 0 auto;">
+            <div id="marketplace-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem;">
+                <!-- Dynamically populated via cars.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Specification Viewport -->
+    <div id="spec-modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(5,5,5,0.85); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); display: flex; align-items: center; justify-content: center; z-index: 9999; opacity: 0; pointer-events: none; transition: opacity 0.4s ease;">
+        <div style="background: #111111; border: 1px solid rgba(255,255,255,0.08); width: 100%; max-width: 600px; border-radius: 8px; overflow: hidden; position: relative; margin: 1.5rem; box-shadow: 0 30px 60px rgba(0,0,0,0.8);">
+            <button id="close-modal" style="position: absolute; top: 1.25rem; right: 1.25rem; background: none; border: none; color: #a0a0a0; font-size: 1.5rem; cursor: pointer; transition: color 0.2s;"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-content">
+                <!-- Programmatically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER PLACEHOLDER (Do not touch actual footer) -->
+
+    <style>
+        #car-search:focus {
+            border-color: #D72638;
+            box-shadow: 0 0 15px rgba(215, 38, 56, 0.2);
+        }
+        .market-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+        }
+        .market-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(215, 38, 56, 0.4);
+        }
+        .details-btn:hover {
+            background: #fff !important;
+            color: #090909 !important;
+        }
+        #close-modal:hover {
+            color: #D72638 !important;
+        }
+    </style>
+
+    <!-- Embed the inline logic into file system connection -->
+    <script src="cars.js"></script>
+</body>
+</html>
