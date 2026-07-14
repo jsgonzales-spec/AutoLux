@@ -1,0 +1,193 @@
+/* ==========================================
+   AUTOLUX ANIMATIONS
+========================================== */
+
+/* HERO VIDEO */
+
+@keyframes heroZoom{
+
+    from{
+
+        transform:scale(1.08);
+
+    }
+
+    to{
+
+        transform:scale(1.16);
+
+    }
+
+}
+
+/* HERO CONTENT */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* MOUSE */
+
+@keyframes mouseScroll{
+
+    0%{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(14px);
+
+    }
+
+}
+
+.wheel{
+
+    animation:mouseScroll 1.8s infinite;
+
+}
+
+/* HERO */
+
+.hero-label{
+
+    animation:fadeUp .8s forwards;
+
+}
+
+.hero h1{
+
+    animation:fadeUp .8s .25s forwards;
+
+}
+
+.hero p{
+
+    animation:fadeUp .8s .45s forwards;
+
+}
+
+.hero-buttons{
+
+    animation:fadeUp .8s .65s forwards;
+
+}
+
+/* ==========================================
+   REVEAL ANIMATION
+========================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.car-card{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+}
+
+.feature-box{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+}
+
+.stat-card{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary{
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.btn-secondary{
+
+    transition:.35s;
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.card-link{
+
+    transition:.35s;
+
+}
+
+.card-link:hover{
+
+    letter-spacing:1px;
+
+}

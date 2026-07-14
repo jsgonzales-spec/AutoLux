@@ -2,230 +2,738 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoLux | Drive Beyond Limits</title>
-    <meta name="description"
-        content="AutoLux offers premium car rentals and luxury vehicles for sale with a cinematic automotive experience.">
+
+    <title>AutoLux | Drive Without Compromise</title>
+
+    <meta name="description" content="Premium car rentals and luxury vehicles designed for every journey.">
+
     <meta name="theme-color" content="#0A0A0A">
 
+    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Styles -->
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/home.css">
+
     <link rel="stylesheet" href="css/animations.css">
+
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="navbar" id="top">
-        <a class="logo" href="index.html" aria-label="AutoLux home">
-            <span class="logo-mark">AUTO</span><span class="logo-mark-accent">LUX</span>
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+
+                AUTO
+
+            </span>
+
+            <span class="logo-mark-accent">
+
+                LUX
+
+            </span>
+
         </a>
 
-        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
-            aria-controls="primary-navigation">
+        <button class="menu-toggle">
+
             <span></span>
+
             <span></span>
+
             <span></span>
+
         </button>
 
-        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+        <nav class="primary-nav">
+
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="cars.html">Cars</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+
+                    <a href="index.html" class="active">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="rentals.html">
+
+                        Rentals
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="cars.html">
+
+                        Cars
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
             </ul>
+
         </nav>
 
-        <a href="rentals.html" class="book-btn">Reservation →</a>
+        <a href="rentals.html" class="book-btn">
+
+            Reservation →
+
+        </a>
+
     </header>
 
-    <main id="main-content">
-        <section class="hero" aria-labelledby="hero-heading">
-            <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- HERO -->
+        <!-- ========================= -->
+
+        <section class="hero">
+
+            <video class="hero-video" autoplay muted loop playsinline>
+
                 <source src="assets/videos/hero.mp4" type="video/mp4">
+
             </video>
 
-            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-overlay"></div>
 
-            <div class="hero-content reveal">
-                <span class="hero-label">PREMIUM AUTOMOTIVE EXPERIENCE</span>
+            <div class="hero-content">
 
-                <h1 id="hero-heading">
-                    DRIVE<br>
-                    WITHOUT<br>
+                <span class="hero-label">
+
+                    PREMIUM AUTOMOTIVE EXPERIENCE
+
+                </span>
+
+                <h1>
+
+                    DRIVE
+
+                    <br>
+
+                    WITHOUT
+
+                    <br>
+
                     COMPROMISE
+
                 </h1>
 
                 <p>
+
                     Discover premium rentals and luxury vehicles engineered for every journey.
+
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="rentals.html" class="btn-primary">Reserve Vehicle →</a>
-                    <a href="cars.html" class="btn-secondary">Explore Collection</a>
+
+                    <a href="rentals.html" class="btn-primary">
+
+                        Reserve Now →
+
+                    </a>
+
+                    <a href="cars.html" class="btn-secondary">
+
+                        View Fleet
+
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="scroll-down" aria-hidden="true">
+            <div class="scroll-down">
+
                 <div class="mouse">
+
                     <div class="wheel"></div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section class="section featured-section" aria-labelledby="featured-heading">
-            <div class="section-header reveal">
-                <span class="section-kicker">CURATED SELECTION</span>
-                <h2 id="featured-heading">Featured Fleet</h2>
-                <p>Discover a selection of premium vehicles chosen for comfort, power, and unforgettable driving.</p>
-            </div>
+        <!-- ========================= -->
+        <!-- FEATURED FLEET -->
+        <!-- ========================= -->
 
-            <div class="card-grid">
-                <article class="car-card reveal">
-                    <div class="car-image car-image-one" aria-hidden="true"></div>
-                    <div class="car-content">
-                        <h3>BMW M4 Competition</h3>
-                        <p>Precision performance with a bold, modern presence.</p>
-                        <div class="car-meta">
-                            <span>Automatic</span>
-                            <span>2024</span>
-                            <span>Premium</span>
-                        </div>
-                    </div>
-                </article>
+        <section class="section featured-section">
 
-                <article class="car-card reveal">
-                    <div class="car-image car-image-two" aria-hidden="true"></div>
-                    <div class="car-content">
-                        <h3>Mercedes-AMG GT</h3>
-                        <p>Luxurious, aggressive, and built to impress from every angle.</p>
-                        <div class="car-meta">
-                            <span>Automatic</span>
-                            <span>2024</span>
-                            <span>Sport</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="container">
 
-                <article class="car-card reveal">
-                    <div class="car-image car-image-three" aria-hidden="true"></div>
-                    <div class="car-content">
-                        <h3>Audi RS7</h3>
-                        <p>Elegant speed and everyday usability in one refined package.</p>
-                        <div class="car-meta">
-                            <span>Automatic</span>
-                            <span>2024</span>
-                            <span>Luxury</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+                <div class="section-header">
 
-        <section class="section why-section" aria-labelledby="why-heading">
-            <div class="section-header reveal">
-                <span class="section-kicker">WHY AUTOLUX</span>
-                <h2 id="why-heading">Built for a Better Driving Experience</h2>
-            </div>
+                    <span class="section-kicker">
 
-            <div class="feature-grid">
-                <article class="feature-box reveal">
-                    <h3>Premium Fleet</h3>
-                    <p>Carefully selected vehicles for rentals and purchase, maintained with attention to detail.</p>
-                </article>
+                        CURATED COLLECTION
 
-                <article class="feature-box reveal">
-                    <h3>Flexible Options</h3>
-                    <p>Choose the right vehicle for every trip, from daily drives to special occasions.</p>
-                </article>
+                    </span>
 
-                <article class="feature-box reveal">
-                    <h3>Reliable Support</h3>
-                    <p>Fast assistance and clear communication from inquiry to checkout.</p>
-                </article>
-            </div>
-        </section>
+                    <h2>
 
-        <section class="section stats-section" aria-labelledby="stats-heading">
-            <div class="section-header reveal">
-                <span class="section-kicker">AT A GLANCE</span>
-                <h2 id="stats-heading">A Brand Experience That Feels Premium</h2>
-            </div>
+                        Featured Fleet
 
-            <div class="stats-grid">
-                <article class="stat-card reveal">
-                    <h3><span class="counter" data-target="500">0</span>+</h3>
-                    <p>Vehicles Available</p>
-                </article>
+                    </h2>
 
-                <article class="stat-card reveal">
-                    <h3><span class="counter" data-target="1200">0</span>+</h3>
-                    <p>Happy Customers</p>
-                </article>
+                    <p>
 
-                <article class="stat-card reveal">
-                    <h3><span class="counter" data-target="24">0</span>/7</h3>
-                    <p>Support Availability</p>
-                </article>
-            </div>
-        </section>
+                        Every vehicle in our collection is selected to deliver premium comfort, performance, and
+                        unforgettable driving experiences.
 
-        <section class="section cta-section" aria-labelledby="cta-heading">
-            <div class="cta-box reveal">
-                <span class="section-kicker">READY TO DRIVE?</span>
-                <h2 id="cta-heading">Reserve your dream vehicle today.</h2>
-                <p>Explore the rentals page for short-term options or browse our cars for sale if you are ready to own.
-                </p>
+                    </p>
 
-                <div class="hero-buttons">
-                    <a href="rentals.html" class="btn-primary">Explore Rentals →</a>
-                    <a href="cars.html" class="btn-secondary">Browse Cars</a>
                 </div>
+
+                <div class="card-grid">
+
+                    <!-- BMW -->
+
+                    <article class="car-card">
+
+                        <div class="car-image">
+
+                            <img src="assets/images/featured/bmw-m4.png" 
+                            alt="BMW M4 Competition">
+
+                        </div>
+
+                        <div class="car-content">
+
+                            <h3>
+
+                                BMW M4 Competition
+
+                            </h3>
+
+                            <p>
+
+                                Precision engineering and aggressive performance built for drivers who demand
+                                excellence.
+
+                            </p>
+
+                            <div class="car-meta">
+
+                                <span>Automatic</span>
+
+                                <span>2024</span>
+
+                                <span>Premium Coupe</span>
+
+                            </div>
+
+                            <a href="rentals.html" class="card-link">
+
+                                Reserve →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- MERCEDES -->
+
+                    <article class="car-card">
+
+                        <div class="car-image">
+
+                            <img src="assets/images/featured/mercedes-amg-gt.jpg" alt="Mercedes AMG GT">
+
+                        </div>
+
+                        <div class="car-content">
+
+                            <h3>
+
+                                Mercedes AMG GT
+
+                            </h3>
+
+                            <p>
+
+                                Sophisticated luxury paired with exhilarating power for every unforgettable journey.
+
+                            </p>
+
+                            <div class="car-meta">
+
+                                <span>Automatic</span>
+
+                                <span>2024</span>
+
+                                <span>Sports Coupe</span>
+
+                            </div>
+
+                            <a href="rentals.html" class="card-link">
+
+                                Reserve →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- AUDI -->
+
+                    <article class="car-card">
+
+                        <div class="car-image">
+
+                            <img src="assets/images/featured/audi-rs7.jpg" alt="Audi RS7">
+
+                        </div>
+
+                        <div class="car-content">
+
+                            <h3>
+
+                                Audi RS7
+
+                            </h3>
+
+                            <p>
+
+                                Elegant design meets refined performance with confidence in every kilometer.
+
+                            </p>
+
+                            <div class="car-meta">
+
+                                <span>Automatic</span>
+
+                                <span>2024</span>
+
+                                <span>Luxury Sedan</span>
+
+                            </div>
+
+                            <a href="cars.html" class="card-link">
+
+                                View Details →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
             </div>
+
         </section>
+
+        <!-- ========================= -->
+        <!-- WHY AUTOLUX -->
+        <!-- ========================= -->
+
+        <section class="section why-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-kicker">
+
+                        WHY AUTOLUX
+
+                    </span>
+
+                    <h2>
+
+                        The AutoLux Difference
+
+                    </h2>
+
+                    <p>
+
+                        Every experience is designed around quality, reliability, and premium customer service.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-box reveal">
+
+                        <h3>
+
+                            Premium Fleet
+
+                        </h3>
+
+                        <p>
+
+                            Carefully selected luxury vehicles maintained to the highest standards.
+
+                        </p>
+
+                    </article>
+
+                    <article class="feature-box reveal">
+
+                        <h3>
+
+                            Flexible Rentals
+
+                        </h3>
+
+                        <p>
+
+                            Daily, weekly, and monthly rental options designed around your schedule.
+
+                        </p>
+
+                    </article>
+
+                    <article class="feature-box reveal">
+
+                        <h3>
+
+                            24/7 Support
+
+                        </h3>
+
+                        <p>
+
+                            Dedicated assistance before, during, and after every reservation.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- STATISTICS -->
+        <!-- ========================= -->
+
+        <section class="section stats-section">
+
+            <div class="container">
+
+                <div class="section-header text-center">
+
+                    <span class="section-kicker">
+
+                        OUR NUMBERS
+
+                    </span>
+
+                    <h2>
+
+                        Trusted by Hundreds of Drivers
+
+                    </h2>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card reveal">
+
+                        <h3>
+
+                            <span class="counter" data-target="500">
+
+                                0
+
+                            </span>+
+
+                        </h3>
+
+                        <p>
+
+                            Premium Vehicles
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card reveal">
+
+                        <h3>
+
+                            <span class="counter" data-target="1200">
+
+                                0
+
+                            </span>+
+
+                        </h3>
+
+                        <p>
+
+                            Happy Clients
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card reveal">
+
+                        <h3>
+
+                            <span class="counter" data-target="24">
+
+                                0
+
+                            </span>/7
+
+                        </h3>
+
+                        <p>
+
+                            Customer Support
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- CALL TO ACTION -->
+        <!-- ========================= -->
+
+        <section class="section cta-section">
+
+            <div class="container">
+
+                <div class="cta-box reveal">
+
+                    <span class="section-kicker">
+
+                        READY TO DRIVE?
+
+                    </span>
+
+                    <h2>
+
+                        Reserve Your Dream Vehicle Today
+
+                    </h2>
+
+                    <p>
+
+                        Whether you're looking for a luxury rental or your next performance vehicle,
+                        AutoLux delivers an experience beyond transportation.
+
+                    </p>
+
+                    <div class="hero-buttons justify-center">
+
+                        <a href="rentals.html" class="btn-primary">
+
+                            Reserve Now →
+
+                        </a>
+
+                        <a href="cars.html" class="btn-secondary">
+
+                            View Fleet
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
     <footer class="footer">
+
         <div class="footer-inner">
+
             <div>
-                <a class="footer-logo" href="index.html">AutoLux</a>
-                <p>Premium rentals and luxury vehicles with a cinematic automotive experience.</p>
+
+                <a href="index.html" class="footer-logo">
+
+                    AUTO<span style="color:#0066B1;">LUX</span>
+
+                </a>
+
+                <p>
+
+                    Premium rentals and luxury vehicles engineered
+                    for unforgettable journeys.
+
+                </p>
+
             </div>
 
             <div>
-                <h3>Quick Links</h3>
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
                 <ul>
-                    <li><a href="rentals.html">Rentals</a></li>
-                    <li><a href="cars.html">Cars</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+                    <li>
+
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="rentals.html">
+
+                            Rentals
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="cars.html">
+
+                            Cars
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
                 </ul>
+
             </div>
 
             <div>
-                <h3>Contact</h3>
+
+                <h3>
+
+                    Contact
+
+                </h3>
+
                 <ul>
-                    <li>autolux@example.com</li>
-                    <li>+63 900 000 0000</li>
-                    <li>Open daily</li>
+
+                    <li>
+
+                        +63 900 000 0000
+
+                    </li>
+
+                    <li>
+
+                        autolux@email.com
+
+                    </li>
+
+                    <li>
+
+                        Monday – Sunday
+
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 AutoLux. All rights reserved.</p>
+
+            © 2026 AutoLux. All Rights Reserved.
+
         </div>
+
     </footer>
 
+    <!-- ========================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================= -->
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
